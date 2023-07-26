@@ -1,0 +1,44 @@
+node: v16.18.0
+npm: 9.4.0
+
+node.js and react
+
+# api
+npm install express cors body-parser
+npm install sqlite3
+
+# client
+npx create-react-app client
+npm install -D tailwindcss
+    * with https://tailwindcss.com/docs/guides/create-react-app
+npm install @headlessui/react @heroicons/react
+npm install axios
+
+# Location
+    * id
+    * name
+    * parent_location_id
+    * created_at
+    * updated_at
+
+# Book
+    * id
+    * name
+    * location_id 
+    * created_at
+    * updated_at
+
+1. fetch data
+    * current location - pattern "location 1 > location 2 > ..."
+    * locations list under current location - directories
+    * book list under current location - files (books)
+
+2. location action
+    * add
+    * update 
+    * delete (delete sub directories and files or books)
+
+3. book action
+    * add
+    * update
+    * delete
